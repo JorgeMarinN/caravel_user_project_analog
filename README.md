@@ -9,9 +9,14 @@ This project involves the design of a capacitive sensor-to-digital converter usi
 
 ![image](https://user-images.githubusercontent.com/93881221/147831652-41cf39a6-2140-4b39-a2b3-ab59a673443d.png)
 
-The architecture has been tested for a DC sweep of input capacitive values. The characteristic plot for an average window of 10us is seen below:
+The architecture has been tested for a DC sweep of input capacitive values. Example output trace values for different capacitance inputs are shown below:
 
-![image](https://user-images.githubusercontent.com/93881221/147832157-99f9d210-2572-4856-a674-c2a69fd72ddf.png)
+![image](https://user-images.githubusercontent.com/93881221/147832655-a40a443d-7c19-4a10-b0fd-b3201bb741cb.png)
+
+The characteristic plot for an average window of 10us is seen below:
+
+![image](https://user-images.githubusercontent.com/93881221/147832381-bbd27e83-ee83-4d5a-b145-8559156f3f49.png)
+
 
 
 
