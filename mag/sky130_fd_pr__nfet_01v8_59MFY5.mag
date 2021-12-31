@@ -1,0 +1,80 @@
+magic
+tech sky130A
+timestamp 1640975112
+<< error_p >>
+rect 7 -45 8 78
+rect -14 -53 14 -50
+rect -16 -70 16 -53
+rect -14 -73 14 -70
+<< pwell >>
+rect -49 -47 49 78
+<< nmos >>
+rect -7 -34 7 65
+<< ndiff >>
+rect -36 58 -7 65
+rect -36 41 -30 58
+rect -13 41 -7 58
+rect -36 24 -7 41
+rect -36 7 -30 24
+rect -13 7 -7 24
+rect -36 -10 -7 7
+rect -36 -27 -30 -10
+rect -13 -27 -7 -10
+rect -36 -34 -7 -27
+rect 7 58 36 65
+rect 7 41 13 58
+rect 30 41 36 58
+rect 7 24 36 41
+rect 7 7 13 24
+rect 30 7 36 24
+rect 7 -10 36 7
+rect 7 -27 13 -10
+rect 30 -27 36 -10
+rect 7 -34 36 -27
+<< ndiffc >>
+rect -30 41 -13 58
+rect -30 7 -13 24
+rect -30 -27 -13 -10
+rect 13 41 30 58
+rect 13 7 30 24
+rect 13 -27 30 -10
+<< poly >>
+rect -7 65 7 78
+rect -7 -45 7 -34
+rect -16 -78 16 -45
+<< locali >>
+rect -30 58 -13 67
+rect -30 24 -13 25
+rect -30 6 -13 7
+rect -30 -36 -13 -27
+rect 13 58 30 67
+rect 13 24 30 25
+rect 13 6 30 7
+rect 13 -36 30 -27
+rect -16 -70 16 -53
+<< viali >>
+rect -30 41 -13 42
+rect -30 25 -13 41
+rect -30 -10 -13 6
+rect -30 -11 -13 -10
+rect 13 41 30 42
+rect 13 25 30 41
+rect 13 -10 30 6
+rect 13 -11 30 -10
+<< metal1 >>
+rect -33 42 -10 65
+rect -33 25 -30 42
+rect -13 25 -10 42
+rect -33 6 -10 25
+rect -33 -11 -30 6
+rect -13 -11 -10 6
+rect -33 -34 -10 -11
+rect 10 42 33 65
+rect 10 25 13 42
+rect 30 25 33 42
+rect 10 6 33 25
+rect 10 -11 13 6
+rect 30 -11 33 6
+rect 10 -34 33 -11
+rect -14 -73 14 -50
+<< end >>
