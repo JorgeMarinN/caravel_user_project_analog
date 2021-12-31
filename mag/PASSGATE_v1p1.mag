@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1640975112
+timestamp 1640991954
 << error_s >>
 rect 1517 660 1645 661
 rect 1709 660 1837 661
@@ -591,7 +591,7 @@ rect 1596 -81 1603 -29
 rect 1655 -81 1662 -29
 rect 1596 -88 1662 -81
 use INVMIN_v1p1  INVMIN_v1p1_0
-timestamp 1640975112
+timestamp 1640991954
 transform 1 0 2576 0 1 192
 box -300 -150 170 530
 << labels >>

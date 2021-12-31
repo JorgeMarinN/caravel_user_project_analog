@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1640975112
+timestamp 1640991954
 << error_s >>
 rect 22866 7800 23094 7827
 rect 22894 7772 23094 7799
@@ -324,22 +324,22 @@ rect 20280 8356 20384 8592
 rect 20620 8356 20654 8504
 rect 20280 8320 20654 8356
 rect 20654 5208 21574 5528
-use OSC_v3p2  OSC_v3p2_1
-timestamp 1640975112
-transform 1 0 1718 0 -1 14404
-box -12 10 20956 6760
-use OSC_v3p2  OSC_v3p2_0
-timestamp 1640975112
-transform 1 0 1718 0 1 -374
-box -12 10 20956 6760
 use DFF_v3p1  DFF_v3p1_0
-timestamp 1640975112
+timestamp 1640991954
 transform 0 -1 23450 1 0 6860
 box -678 -204 986 904
 use PASSGATE_v1p1  PASSGATE_v1p1_0
-timestamp 1640975112
+timestamp 1640991954
 transform 1 0 19368 0 1 6586
 box 1366 -168 2882 1080
+use OSC_v3p2  OSC_v3p2_0
+timestamp 1640991954
+transform 1 0 1718 0 -1 14404
+box -12 10 20956 6760
+use OSC_v3p2  OSC_v3p2_1
+timestamp 1640991954
+transform 1 0 1718 0 1 -374
+box -12 10 20956 6760
 << labels >>
 flabel metal1 s 7808 7968 7808 7968 0 FreeSans 2000 0 0 0 VDD
 port 1 nsew

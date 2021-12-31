@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1640975112
+timestamp 1640991954
 << error_s >>
 rect -359 602 -295 636
 rect 241 602 305 636
@@ -421,62 +421,62 @@ rect 690 -64 696 -12
 rect 632 -70 696 -64
 rect 882 -106 946 264
 rect 432 -166 946 -106
-use sky130_fd_pr__nfet_01v8_59MFY5  sky130_fd_pr__nfet_01v8_59MFY5_0
-timestamp 1640975112
-transform 1 0 -327 0 1 95
-box -98 -156 98 156
-use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_1
-timestamp 1640975112
-transform 1 0 -527 0 1 492
-box -108 -198 108 164
-use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_0
-timestamp 1640975112
-transform 1 0 -527 0 1 126
-box -98 -126 98 126
-use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_0
-timestamp 1640975112
-transform 1 0 -327 0 1 492
-box -108 -198 108 164
-use sky130_fd_pr__nfet_01v8_59MFY5  sky130_fd_pr__nfet_01v8_59MFY5_1
-timestamp 1640975112
-transform 1 0 -127 0 1 95
-box -98 -156 98 156
-use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_2
-timestamp 1640975112
-transform 1 0 73 0 1 492
-box -108 -198 108 164
-use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_1
-timestamp 1640975112
-transform 1 0 73 0 1 126
-box -98 -126 98 126
-use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_3
-timestamp 1640975112
-transform 1 0 273 0 1 492
-box -108 -198 108 164
-use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_2
-timestamp 1640975112
-transform 1 0 273 0 1 126
-box -98 -126 98 126
-use sky130_fd_pr__nfet_01v8_59MFY5  sky130_fd_pr__nfet_01v8_59MFY5_2
-timestamp 1640975112
-transform 1 0 473 0 1 95
-box -98 -156 98 156
-use sky130_fd_pr__nfet_01v8_59MFY5  sky130_fd_pr__nfet_01v8_59MFY5_3
-timestamp 1640975112
-transform 1 0 673 0 1 95
-box -98 -156 98 156
-use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_4
-timestamp 1640975112
-transform 1 0 673 0 1 492
-box -108 -198 108 164
-use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_5
-timestamp 1640975112
-transform 1 0 873 0 1 492
-box -108 -198 108 164
 use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_3
-timestamp 1640975112
+timestamp 1640991954
 transform 1 0 873 0 1 126
 box -98 -126 98 126
+use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_5
+timestamp 1640991954
+transform 1 0 873 0 1 492
+box -108 -198 108 164
+use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_4
+timestamp 1640991954
+transform 1 0 673 0 1 492
+box -108 -198 108 164
+use sky130_fd_pr__nfet_01v8_59MFY5  sky130_fd_pr__nfet_01v8_59MFY5_3
+timestamp 1640991954
+transform 1 0 673 0 1 95
+box -98 -156 98 156
+use sky130_fd_pr__nfet_01v8_59MFY5  sky130_fd_pr__nfet_01v8_59MFY5_2
+timestamp 1640991954
+transform 1 0 473 0 1 95
+box -98 -156 98 156
+use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_2
+timestamp 1640991954
+transform 1 0 273 0 1 126
+box -98 -126 98 126
+use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_3
+timestamp 1640991954
+transform 1 0 273 0 1 492
+box -108 -198 108 164
+use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_1
+timestamp 1640991954
+transform 1 0 73 0 1 126
+box -98 -126 98 126
+use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_2
+timestamp 1640991954
+transform 1 0 73 0 1 492
+box -108 -198 108 164
+use sky130_fd_pr__nfet_01v8_59MFY5  sky130_fd_pr__nfet_01v8_59MFY5_1
+timestamp 1640991954
+transform 1 0 -127 0 1 95
+box -98 -156 98 156
+use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_0
+timestamp 1640991954
+transform 1 0 -327 0 1 492
+box -108 -198 108 164
+use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_0
+timestamp 1640991954
+transform 1 0 -527 0 1 126
+box -98 -126 98 126
+use sky130_fd_pr__pfet_01v8_MA8JHN  sky130_fd_pr__pfet_01v8_MA8JHN_1
+timestamp 1640991954
+transform 1 0 -527 0 1 492
+box -108 -198 108 164
+use sky130_fd_pr__nfet_01v8_59MFY5  sky130_fd_pr__nfet_01v8_59MFY5_0
+timestamp 1640991954
+transform 1 0 -327 0 1 95
+box -98 -156 98 156
 << labels >>
 flabel metal2 s 476 -40 476 -40 0 FreeSans 600 0 0 0 NDIFF
 port 1 nsew
