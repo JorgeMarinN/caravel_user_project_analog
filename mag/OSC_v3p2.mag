@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1640991954
+timestamp 1641609411
 << locali >>
 rect 19462 5928 19674 6028
 rect 19462 5822 19515 5928
@@ -76,19 +76,19 @@ rect 392 5582 5856 5902
 rect 7392 5582 12856 5902
 rect 14392 5582 18936 5902
 use INVandCAP_v1p1  INVandCAP_v1p1_0
-timestamp 1640991954
+timestamp 1641609411
 transform 1 0 13988 0 1 10
 box 0 0 6968 6476
 use INVandCAP_v1p1  INVandCAP_v1p1_1
-timestamp 1640991954
+timestamp 1641609411
 transform 1 0 6988 0 1 10
 box 0 0 6968 6476
 use INVandCAP_v1p1  INVandCAP_v1p1_2
-timestamp 1640991954
+timestamp 1641609411
 transform 1 0 -12 0 1 10
 box 0 0 6968 6476
 use BUFFMIN_v1p1  BUFFMIN_v1p1_0
-timestamp 1640991954
+timestamp 1641609411
 transform 1 0 19494 0 1 5938
 box -30 -10 910 670
 << labels >>

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1640991954
+timestamp 1641609411
 << locali >>
 rect -15 20 10 45
 rect 430 20 455 45
@@ -8,11 +8,11 @@ rect 430 20 455 45
 rect -15 220 15 310
 rect -15 65 15 155
 use invmin_magic_v1p1  invmin_magic_v1p1_1
-timestamp 1640991954
+timestamp 1641609411
 transform 1 0 370 0 1 70
 box -150 -75 85 265
 use invmin_magic_v1p1  invmin_magic_v1p1_0
-timestamp 1640991954
+timestamp 1641609411
 transform 1 0 135 0 1 70
 box -150 -75 85 265
 << labels >>
