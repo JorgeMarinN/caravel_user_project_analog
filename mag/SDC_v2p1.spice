@@ -1,0 +1,112 @@
+* NGSPICE file created from SDC_v2p1.ext - technology: sky130A
+
+.subckt INVMIN_v1p1 VIN VOUT VDD VSS
+X0 VOUT VIN VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 VOUT VIN VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt PASSGATE_v1p2 VIN VOUT CTR VDD VSS
+XINVMIN_v1p1_0 CTR INVMIN_v1p1_0/VOUT VDD VSS INVMIN_v1p1
+X0 VIN CTR VOUT VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 VOUT CTR VIN VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VIN INVMIN_v1p1_0/VOUT VOUT VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 VOUT INVMIN_v1p1_0/VOUT VIN VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 VIN INVMIN_v1p1_0/VOUT VOUT VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 VIN INVMIN_v1p1_0/VOUT VOUT VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 VOUT INVMIN_v1p1_0/VOUT VIN VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 VOUT INVMIN_v1p1_0/VOUT VIN VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt invmin_magic_v1p1 VIN VOUT VDD VSS
+X0 VOUT VIN VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 VOUT VIN VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt BUFFMIN_v1p1 VIN VOUT VDD VSS
+Xinvmin_magic_v1p1_0 VIN invmin_magic_v1p1_1/VIN VDD VSS invmin_magic_v1p1
+Xinvmin_magic_v1p1_1 invmin_magic_v1p1_1/VIN VOUT VDD VSS invmin_magic_v1p1
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_2_4SGG6N m4_n2231_n2320# c2_n2131_n2220#
+X0 c2_n2131_n2220# m4_n2231_n2320# sky130_fd_pr__cap_mim_m3_2 l=2.22e+07u w=1.88e+07u
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_2_7PBNAZ m4_n671_n2320# c2_n571_n2220#
+X0 c2_n571_n2220# m4_n671_n2320# sky130_fd_pr__cap_mim_m3_2 l=2.22e+07u w=3.2e+06u
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_9K4XRG m3_n456_n2320# c1_n356_n2220#
+X0 c1_n356_n2220# m3_n456_n2320# sky130_fd_pr__cap_mim_m3_1 l=2.22e+07u w=3.2e+06u
+.ends
+
+.subckt CAPOSC_v1p1 BOT TOP_V TOP_B
+Xsky130_fd_pr__cap_mim_m3_2_4SGG6N_0 BOT TOP_B sky130_fd_pr__cap_mim_m3_2_4SGG6N
+Xsky130_fd_pr__cap_mim_m3_2_7PBNAZ_0 BOT TOP_V sky130_fd_pr__cap_mim_m3_2_7PBNAZ
+Xsky130_fd_pr__cap_mim_m3_1_9K4XRG_0 BOT TOP_V sky130_fd_pr__cap_mim_m3_1_9K4XRG
+X0 TOP_B BOT sky130_fd_pr__cap_mim_m3_1 l=2.22e+07u w=1.88e+07u
+.ends
+
+.subckt INV_v1p1 VIN VOUT VDD VSS
+X0 VOUT VIN VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 VOUT VIN VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VSS VIN VOUT VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 VDD VIN VOUT VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 VOUT VIN VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 VOUT VIN VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 VDD VIN VOUT VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 VDD VIN VOUT VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt INVandCAP_v1p1 VOUT VDD VSS INV_v1p1_0/VIN CAPOSC_v1p1_0/TOP_V
+XCAPOSC_v1p1_0 VSS CAPOSC_v1p1_0/TOP_V VOUT CAPOSC_v1p1
+XINV_v1p1_0 INV_v1p1_0/VIN VOUT VDD VSS INV_v1p1
+.ends
+
+.subckt OSC_v3p2 VDD VSS SENS_IN N1 CON_CV N2
+XBUFFMIN_v1p1_0 BUFFMIN_v1p1_0/VIN N2 VDD VSS BUFFMIN_v1p1
+XINVandCAP_v1p1_0 SENS_IN VDD VSS BUFFMIN_v1p1_0/VIN CON_CV INVandCAP_v1p1
+XINVandCAP_v1p1_1 BUFFMIN_v1p1_0/VIN VDD VSS N1 BUFFMIN_v1p1_0/VIN INVandCAP_v1p1
+XINVandCAP_v1p1_2 N1 VDD VSS SENS_IN N1 INVandCAP_v1p1
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_MA8JHN a_15_n136# a_n33_95# a_n73_n136# w_n109_n198#
+X0 a_15_n136# a_n33_95# a_n73_n136# w_n109_n198# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_59MFY5 a_n73_n69# a_n33_n157# a_15_n69#
+X0 a_15_n69# a_n33_n157# a_n73_n69# w_n99_n95# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_6H9P4D a_n73_n100# a_15_n100# a_n15_n126#
+X0 a_15_n100# a_n15_n126# a_n73_n100# w_n99_n126# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt DFF_v4p1 VDD GND CLK IN ND D
+Xsky130_fd_pr__pfet_01v8_MA8JHN_0 VDD IN m1_776_62# VDD sky130_fd_pr__pfet_01v8_MA8JHN
+Xsky130_fd_pr__pfet_01v8_MA8JHN_1 m1_776_62# CLK m1_476_n356# VDD sky130_fd_pr__pfet_01v8_MA8JHN
+Xsky130_fd_pr__pfet_01v8_MA8JHN_2 D ND VDD VDD sky130_fd_pr__pfet_01v8_MA8JHN
+Xsky130_fd_pr__pfet_01v8_MA8JHN_3 VDD D ND VDD sky130_fd_pr__pfet_01v8_MA8JHN
+Xsky130_fd_pr__pfet_01v8_MA8JHN_5 m1_n564_n40# CLK sky130_fd_pr__pfet_01v8_MA8JHN_5/a_n73_n136#
++ VDD sky130_fd_pr__pfet_01v8_MA8JHN
+Xsky130_fd_pr__pfet_01v8_MA8JHN_4 sky130_fd_pr__pfet_01v8_MA8JHN_4/a_15_n136# sky130_fd_pr__pfet_01v8_MA8JHN_4/a_n33_95#
++ sky130_fd_pr__pfet_01v8_MA8JHN_4/a_n73_n136# sky130_fd_pr__pfet_01v8_MA8JHN_4/w_n109_n198#
++ sky130_fd_pr__pfet_01v8_MA8JHN
+Xsky130_fd_pr__nfet_01v8_59MFY5_0 m1_576_n268# CLK GND sky130_fd_pr__nfet_01v8_59MFY5
+Xsky130_fd_pr__nfet_01v8_59MFY5_1 D m1_476_n356# m1_576_n268# sky130_fd_pr__nfet_01v8_59MFY5
+Xsky130_fd_pr__nfet_01v8_6H9P4D_0 GND m1_476_n356# IN sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_59MFY5_2 m1_n224_n268# m1_n564_n40# ND sky130_fd_pr__nfet_01v8_59MFY5
+Xsky130_fd_pr__nfet_01v8_6H9P4D_1 GND D ND sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_59MFY5_3 sky130_fd_pr__nfet_01v8_59MFY5_3/a_n73_n69# CLK
++ m1_n224_n268# sky130_fd_pr__nfet_01v8_59MFY5
+Xsky130_fd_pr__nfet_01v8_6H9P4D_2 ND GND D sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_6H9P4D_3 sky130_fd_pr__nfet_01v8_6H9P4D_3/a_n73_n100# sky130_fd_pr__nfet_01v8_6H9P4D_3/a_15_n100#
++ sky130_fd_pr__nfet_01v8_6H9P4D_3/a_n15_n126# sky130_fd_pr__nfet_01v8_6H9P4D
+.ends
+
+.subckt SDC_v2p1 VDD VSS SENS_IN REF_IN DOUT
+XPASSGATE_v1p2_0 SENS_IN OSC_v3p2_0/CON_CV DOUT VDD VSS PASSGATE_v1p2
+XOSC_v3p2_0 VDD VSS SENS_IN OSC_v3p2_0/N1 OSC_v3p2_0/CON_CV OSC_v3p2_0/N2 OSC_v3p2
+XOSC_v3p2_1 VDD VSS REF_IN OSC_v3p2_1/N1 REF_IN OSC_v3p2_1/N2 OSC_v3p2
+XDFF_v4p1_0 VDD VSS OSC_v3p2_1/N2 OSC_v3p2_0/N2 DFF_v4p1_0/ND DOUT DFF_v4p1
+.ends
+
