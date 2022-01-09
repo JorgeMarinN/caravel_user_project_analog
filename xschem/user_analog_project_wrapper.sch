@@ -51,7 +51,7 @@ N 3950 -70 4040 -70 { lab=vssa1}
 N 4180 -240 4340 -240 { lab=io_analog[2]}
 N 4340 -350 4340 -240 { lab=io_analog[2]}
 N 3780 -260 3880 -260 { lab=io_analog[1]}
-N 3780 -140 3880 -140 { lab=io_analog[1]}
+N 3780 -140 3880 -140 { lab=io_analog[0]}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -154,9 +154,9 @@ C {devices/lab_pin.sym} 3630 830 0 0 {name=l29 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 3630 940 0 0 {name=l30 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 4130 820 0 0 {name=l31 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 4130 940 0 0 {name=l32 sig_type=std_logic lab=vssd1}
-C {SDC_v2p1.sym} 3820 -280 0 0 {name=X1}
 C {devices/lab_pin.sym} 4110 -430 0 1 {name=l33 sig_type=std_logic lab=vccd1}
 C {devices/lab_pin.sym} 3950 -70 0 0 {name=l34 sig_type=std_logic lab=vssa1}
 C {devices/lab_pin.sym} 4340 -350 0 0 {name=l35 sig_type=std_logic lab=io_analog[2]}
 C {devices/lab_pin.sym} 3780 -260 0 0 {name=l1 sig_type=std_logic lab=io_analog[1]}
 C {devices/lab_pin.sym} 3780 -140 0 0 {name=l2 sig_type=std_logic lab=io_analog[0]}
+C {/home/jorge/Documents/Postdoc/github/caravel_user_project_analog/xschem/SDC_v2p1.sym} 3820 -280 0 0 {name=X1}
