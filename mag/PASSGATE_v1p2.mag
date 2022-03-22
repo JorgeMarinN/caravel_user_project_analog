@@ -586,7 +586,7 @@ rect 1596 -29 1662 917
 rect 1596 -81 1603 -29
 rect 1655 -81 1662 -29
 rect 1596 -88 1662 -81
-use INVMIN_v1p1  INVMIN_v1p1_0 ~/Documents/Postdoc/github/caravel_user_project_analog/mag
+use INVMIN_v1p1  INVMIN_v1p1_0
 timestamp 1641609411
 transform 1 0 2576 0 1 192
 box -300 -150 170 530

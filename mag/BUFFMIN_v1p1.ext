@@ -16,11 +16,11 @@ node "VOUT" 12 57.3125 870 62 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "VIN" 12 57.3125 -4 68 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2500 200 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "VDD" "VSS" 20.7692
+cap "invmin_magic_v1p1_0/VOUT" "VIN" 10.6757
 cap "invmin_magic_v1p1_0/VOUT" "VSS" 59.4
 cap "VSS" "VDD" -20.7692
-cap "VIN" "invmin_magic_v1p1_0/VOUT" 10.6757
-cap "VOUT" "invmin_magic_v1p1_0/VOUT" 32.1081
 cap "invmin_magic_v1p1_0/VOUT" "VDD" 59.4
+cap "invmin_magic_v1p1_0/VOUT" "VOUT" 32.1081
 merge "invmin_magic_v1p1_1/VSS" "invmin_magic_v1p1_0/VSS" -179.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10800 -840 0 0 0 0 0 0 0 0 0 0
 merge "invmin_magic_v1p1_0/VSS" "VSUBS"
 merge "VSUBS" "VSS"

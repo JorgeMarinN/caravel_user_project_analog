@@ -77,14 +77,14 @@ rect 5584 5654 5740 5660
 rect 5584 5510 5590 5654
 rect 5734 5510 5740 5654
 rect 5584 5504 5740 5510
-use INV_v1p1  INV_v1p1_0
-timestamp 1641609411
-transform 1 0 2818 0 1 5366
-box 1366 -168 2276 1080
 use CAPOSC_v1p1  CAPOSC_v1p1_0
 timestamp 1641609411
 transform 1 0 -3068 0 1 432
 box 3068 -432 10032 5306
+use INV_v1p1  INV_v1p1_0
+timestamp 1641609411
+transform 1 0 2818 0 1 5366
+box 1366 -168 2276 1080
 << labels >>
 flabel metal3 s 5220 5580 5220 5580 0 FreeSans 2000 0 0 0 VOUT
 port 1 nsew

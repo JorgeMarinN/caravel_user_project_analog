@@ -75,6 +75,10 @@ rect 16840 5002 17000 5162
 rect 392 5582 5856 5902
 rect 7392 5582 12856 5902
 rect 14392 5582 18936 5902
+use BUFFMIN_v1p1  BUFFMIN_v1p1_0
+timestamp 1641609411
+transform 1 0 19494 0 1 5938
+box -30 -10 910 670
 use INVandCAP_v1p1  INVandCAP_v1p1_0
 timestamp 1641609411
 transform 1 0 13988 0 1 10
@@ -87,10 +91,6 @@ use INVandCAP_v1p1  INVandCAP_v1p1_2
 timestamp 1641609411
 transform 1 0 -12 0 1 10
 box 0 0 6968 6476
-use BUFFMIN_v1p1  BUFFMIN_v1p1_0
-timestamp 1641609411
-transform 1 0 19494 0 1 5938
-box -30 -10 910 670
 << labels >>
 flabel metal1 s 5626 6424 5626 6424 0 FreeSans 2000 0 0 0 VDD
 port 1 nsew

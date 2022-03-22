@@ -247,15 +247,11 @@ rect 20280 8356 20384 8592
 rect 20620 8356 20654 8504
 rect 20280 8320 20654 8356
 rect 20654 5208 21574 5528
-use PASSGATE_v1p2  PASSGATE_v1p2_0
-timestamp 1641609411
-transform 1 0 19368 0 1 6586
-box 1366 -168 2882 1080
 use DFF_v4p1  DFF_v4p1_0
 timestamp 1641609411
 transform 0 -1 23156 1 0 6824
 box -636 -644 1036 626
-use OSC_v3p2  OSC_v3p2_0 ~/Documents/Postdoc/github/caravel_user_project_analog/mag
+use OSC_v3p2  OSC_v3p2_0
 timestamp 1641609411
 transform 1 0 1718 0 -1 14404
 box -12 10 20956 6760
@@ -263,6 +259,10 @@ use OSC_v3p2  OSC_v3p2_1
 timestamp 1641609411
 transform 1 0 1718 0 1 -374
 box -12 10 20956 6760
+use PASSGATE_v1p2  PASSGATE_v1p2_0
+timestamp 1641609411
+transform 1 0 19368 0 1 6586
+box 1366 -168 2882 1080
 << labels >>
 flabel metal1 s 7808 7968 7808 7968 0 FreeSans 2000 0 0 0 VDD
 port 1 nsew
