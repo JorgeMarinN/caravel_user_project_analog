@@ -1,10 +1,11 @@
-timestamp 1641611256
+timestamp 1647922018
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
 use SDC_v2p1 SDC_v2p1_0 -1 0 579878 0 1 684648
+use INV_v1p1 INV_v1p1_0 -1 0 553654 0 1 690106
 port "io_analog[4]" 42 329294 702300 334294 704800 m5
 port "io_analog[4]" 42 318994 702300 323994 704800 m5
 port "io_analog[5]" 43 227594 702300 232594 704800 m5
@@ -691,8 +692,8 @@ port "wbs_ack_o" 560 2888 -800 3000 480 m2
 port "wb_rst_i" 559 1706 -800 1818 480 m2
 port "wb_clk_i" 558 524 -800 636 480 m2
 port "io_analog[0]" 37 582300 677984 584800 682984 m3
-port "io_analog[2]" 40 465394 702300 470394 704800 m3
 port "io_analog[1]" 39 566594 702300 571594 704800 m3
+port "io_analog[2]" 40 465394 702300 470394 704800 m3
 port "vccd1" 550 582340 639784 584800 644584 m3
 port "vssa1" 554 520594 702340 525394 704800 m3
 node "io_analog[4]" 0 2925 329294 702300 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12500000 15000 0 0
@@ -1381,46 +1382,73 @@ node "wbs_ack_o" 1 631.648 2888 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "wb_rst_i" 1 631.648 1706 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_clk_i" 1 631.648 524 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "io_analog[0]" 0 14731.5 582300 677984 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19872 564 14617280 50288 0 0 0 0 0 0
-node "io_analog[2]" 2 52442 465394 702300 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42340 1576 25322160 217156 0 0 0 0 0 0
 node "io_analog[1]" 0 18043.5 566594 702300 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19872 564 15494000 64900 0 0 0 0 0 0
+node "m1_551984_690510#" 6 4594.61 551984 690510 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9604 392 51944 1968 1005896 19116 0 0 0 0 0 0
+node "io_analog[2]" 0 49907.8 465394 702300 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9604 392 9604 392 24690324 206520 0 0 0 0 0 0
 node "vccd1" 1 34798.6 582340 639784 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 744072 4436 6676800 111520 12156000 20320 0 0 0 0 0 0
 node "vssa1" 0 25496.1 520594 702340 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28676 696 10000 400 16872240 98924 0 0 0 0 0 0
+node "li_552240_690422#" 17 2083.99 552240 690422 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10404 408 412692 8296 0 0 0 0 0 0 0 0 0 0
+node "li_552246_691066#" 22 3131.66 552246 691066 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8100 360 16488 720 582120 13116 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "io_analog[6]" "io_analog[6]" 26250
-cap "io_analog[5]" "io_analog[5]" 26250
 cap "io_clamp_high[0]" "io_clamp_low[0]" 525
-cap "io_analog[0]" "vccd1" 167.76
-cap "io_analog[6]" "io_analog[6]" 26250
-cap "io_analog[5]" "io_analog[5]" 21250
-cap "io_clamp_high[1]" "io_analog[5]" 525
-cap "io_analog[4]" "io_clamp_high[0]" 525
-cap "io_analog[5]" "io_analog[5]" 21250
-cap "io_analog[6]" "io_analog[6]" 21250
-cap "io_analog[6]" "io_analog[6]" 21250
 cap "io_clamp_high[2]" "io_analog[6]" 525
-cap "io_analog[4]" "io_clamp_low[0]" 525
+cap "io_analog[5]" "io_clamp_low[1]" 525
+cap "io_analog[4]" "io_analog[4]" 26250
 cap "io_clamp_low[2]" "io_analog[6]" 525
-cap "io_analog[4]" "io_analog[4]" 26250
-cap "io_analog[4]" "io_analog[4]" 21250
-cap "io_clamp_low[1]" "io_analog[5]" 525
-cap "io_analog[4]" "io_analog[4]" 26250
 cap "io_analog[5]" "io_analog[5]" 26250
-cap "io_clamp_high[1]" "io_clamp_low[1]" 525
+cap "io_analog[0]" "vccd1" 167.76
+cap "io_analog[6]" "io_analog[6]" 21250
+cap "io_clamp_high[0]" "io_analog[4]" 525
 cap "io_analog[4]" "io_analog[4]" 21250
-cap "io_clamp_high[2]" "io_clamp_low[2]" 525
-cap "SDC_v2p1_0/DFF_v4p1_0/VDD" "SDC_v2p1_0/DOUT" 2.27374e-13
-cap "SDC_v2p1_0/OSC_v3p2_1/VDD" "SDC_v2p1_0/OSC_v3p2_1/SENS_IN" 588.554
-cap "vssa1" "io_analog[2]" 70.39
+cap "io_clamp_high[1]" "io_clamp_low[1]" 525
+cap "li_552240_690422#" "m1_551984_690510#" 171.55
+cap "io_analog[5]" "io_analog[5]" 21250
+cap "io_analog[5]" "io_analog[5]" 26250
+cap "io_analog[5]" "io_analog[5]" 21250
+cap "li_552246_691066#" "m1_551984_690510#" 125.083
+cap "io_analog[4]" "io_clamp_low[0]" 525
+cap "io_clamp_high[1]" "io_analog[5]" 525
+cap "io_analog[4]" "io_analog[4]" 26250
+cap "io_analog[6]" "io_analog[6]" 21250
+cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_analog[4]" "io_analog[4]" 21250
+cap "io_clamp_low[2]" "io_clamp_high[2]" 525
+cap "INV_v1p1_0/VDD" "INV_v1p1_0/VOUT" 118.334
+cap "INV_v1p1_0/VIN" "INV_v1p1_0/VDD" 127.42
+cap "INV_v1p1_0/VIN" "INV_v1p1_0/VSS" 127.994
+cap "INV_v1p1_0/VIN" "INV_v1p1_0/VOUT" 16.7225
+cap "INV_v1p1_0/VIN" "INV_v1p1_0/VSS" -74.6992
+cap "INV_v1p1_0/VDD" "INV_v1p1_0/VSS" 1.1
+cap "INV_v1p1_0/VDD" "INV_v1p1_0/VIN" -75.2552
+cap "INV_v1p1_0/VIN" "INV_v1p1_0/VOUT" 5.72254
+cap "SDC_v2p1_0/OSC_v3p2_1/SENS_IN" "SDC_v2p1_0/OSC_v3p2_1/VDD" 588.554
+cap "li_552246_691066#" "SDC_v2p1_0/DFF_v4p1_0/sky130_fd_pr__nfet_01v8_59MFY5_0/a_n33_n157#" 23.2759
+cap "li_552246_691066#" "SDC_v2p1_0/DFF_v4p1_0/GND" 99.547
+cap "SDC_v2p1_0/DFF_v4p1_0/GND" "m1_551984_690510#" 70.39
+cap "SDC_v2p1_0/OSC_v3p2_0/BUFFMIN_v1p1_0/invmin_magic_v1p1_1/VDD" "SDC_v2p1_0/OSC_v3p2_0/N2" 23.8724
+cap "SDC_v2p1_0/DFF_v4p1_0/sky130_fd_pr__pfet_01v8_MA8JHN_1/a_n33_95#" "SDC_v2p1_0/OSC_v3p2_0/BUFFMIN_v1p1_0/invmin_magic_v1p1_1/VDD" 46.5318
 cap "SDC_v2p1_0/OSC_v3p2_0/N2" "SDC_v2p1_0/DOUT" 91.008
-cap "SDC_v2p1_0/DOUT" "SDC_v2p1_0/DFF_v4p1_0/VDD" 158
+cap "SDC_v2p1_0/OSC_v3p2_0/BUFFMIN_v1p1_0/invmin_magic_v1p1_1/VDD" "SDC_v2p1_0/DFF_v4p1_0/sky130_fd_pr__nfet_01v8_59MFY5_0/a_n33_n157#" 3.16092
+cap "SDC_v2p1_0/OSC_v3p2_0/BUFFMIN_v1p1_0/invmin_magic_v1p1_1/VDD" "SDC_v2p1_0/DFF_v4p1_0/sky130_fd_pr__nfet_01v8_59MFY5_1/a_n33_n157#" 61.1111
+cap "SDC_v2p1_0/OSC_v3p2_0/BUFFMIN_v1p1_0/invmin_magic_v1p1_1/VDD" "SDC_v2p1_0/DOUT" 158
 cap "SDC_v2p1_0/OSC_v3p2_0/SENS_IN" "SDC_v2p1_0/OSC_v3p2_0/VDD" 588.554
-merge "SDC_v2p1_0/VSUBS" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "SDC_v2p1_0/DFF_v4p1_0/GND" "SDC_v2p1_0/li_21224_6444#" -271.134 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27696 -204 -192378 -212 0 0 0 0 0 0 0 0 0 0
+merge "SDC_v2p1_0/li_21224_6444#" "INV_v1p1_0/VSS"
+merge "INV_v1p1_0/VSS" "li_552240_690422#"
+merge "li_552240_690422#" "SDC_v2p1_0/VSUBS"
+merge "SDC_v2p1_0/VSUBS" "VSUBS"
 merge "SDC_v2p1_0/OSC_v3p2_0/INVandCAP_v1p1_2/VDD" "SDC_v2p1_0/OSC_v3p2_0/VDD" -758.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1648 361200 -2800 0 0 0 0 0 0 0 0
 merge "SDC_v2p1_0/OSC_v3p2_0/VDD" "SDC_v2p1_0/OSC_v3p2_1/INVandCAP_v1p1_2/VDD"
 merge "SDC_v2p1_0/OSC_v3p2_1/INVandCAP_v1p1_2/VDD" "SDC_v2p1_0/OSC_v3p2_1/VDD"
 merge "SDC_v2p1_0/OSC_v3p2_1/VDD" "vccd1"
-merge "SDC_v2p1_0/OSC_v3p2_0/SENS_IN" "io_analog[1]" -7706.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -312624 -564 -12505600 -17800 0 0 0 0 0 0
-merge "SDC_v2p1_0/OSC_v3p2_0/INVandCAP_v1p1_0/VSS" "SDC_v2p1_0/m1_22668_9130#" -13365.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68172 -696 60000 -400 -23316586 -30338 0 0 0 0 0 0
+merge "SDC_v2p1_0/OSC_v3p2_0/BUFFMIN_v1p1_0/invmin_magic_v1p1_1/VDD" "SDC_v2p1_0/DFF_v4p1_0/VDD" -590.398 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60620 -360 -153948 -720 550170 -2602 0 0 0 0 0 0 0 0
+merge "SDC_v2p1_0/DFF_v4p1_0/VDD" "INV_v1p1_0/VDD"
+merge "INV_v1p1_0/VDD" "li_552246_691066#"
+merge "SDC_v2p1_0/OSC_v3p2_0/SENS_IN" "io_analog[1]" -881.515 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -312624 -564 -5600 -2800 0 0 0 0 0 0
+merge "SDC_v2p1_0/OSC_v3p2_0/INVandCAP_v1p1_0/VSS" "SDC_v2p1_0/m1_22668_9130#" -327.218 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68172 -696 60000 -400 299414 -1298 0 0 0 0 0 0
 merge "SDC_v2p1_0/m1_22668_9130#" "vssa1"
-merge "SDC_v2p1_0/DOUT" "io_analog[2]" -7616.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86096 -1576 -12586760 -16566 0 0 0 0 0 0
+merge "SDC_v2p1_0/DOUT" "INV_v1p1_0/VIN" -860.886 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52912 -216 86096 -1576 -86760 -1566 0 0 0 0 0 0
+merge "INV_v1p1_0/VIN" "m1_551984_690510#"
+merge "INV_v1p1_0/VOUT" "io_analog[2]" -150.776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -94976 -204 0 0 151164 0 0 0 0 0 0 0
 merge "SDC_v2p1_0/OSC_v3p2_1/SENS_IN" "io_analog[0]" -871.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -264852 -564 -42000 -2800 0 0 0 0 0 0
