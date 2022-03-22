@@ -18,16 +18,16 @@ node "VIN" 5634 1226.03 1508 940 m2 0 0 0 0 0 0 0 0 24800 1048 51200 2112 0 0 0 
 node "a_1548_564#" 3792 1796.92 1548 564 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84348 5088 0 0 9432 808 106764 3972 0 0 0 0 0 0 0 0 0 0
 node "VDD" 12462 3606.12 2296 588 li 0 0 0 0 580580 3096 0 0 90848 5344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 106328 5516 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSS" 0 0 2206 272 li 0 0 0 0 0 0 0 0 0 0 63512 3736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148112 4676 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VIN" "a_1548_564#" 333.079
+cap "VDD" "a_1548_564#" 189.161
+cap "a_1548_564#" "VIN" 333.079
+cap "VDD" "VIN" 457.863
+cap "a_1548_564#" "CTR" 193.769
+cap "VDD" "CTR" 15.6513
+cap "a_1548_564#" "VOUT" 438.894
+cap "VIN" "CTR" 170.297
 cap "VDD" "VOUT" 491.661
 cap "VIN" "VOUT" 2733.04
-cap "CTR" "a_1548_564#" 193.769
-cap "VIN" "VDD" 457.863
-cap "CTR" "VOUT" 205.682
-cap "CTR" "VDD" 15.6513
-cap "VIN" "CTR" 170.297
-cap "VOUT" "a_1548_564#" 438.894
-cap "VDD" "a_1548_564#" 189.161
+cap "VOUT" "CTR" 205.682
 device msubckt sky130_fd_pr__nfet_01v8 1662 32 1663 33 l=30 w=200 "VSS" "CTR" 60 0 "VOUT" 200 0 "VIN" 200 0
 device msubckt sky130_fd_pr__nfet_01v8 1566 32 1567 33 l=30 w=200 "VSS" "CTR" 60 0 "VIN" 200 0 "VOUT" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 2046 662 2047 663 l=30 w=200 "VDD" "a_1548_564#" 60 0 "VOUT" 200 0 "VIN" 200 0
@@ -36,16 +36,16 @@ device msubckt sky130_fd_pr__pfet_01v8 1854 662 1855 663 l=30 w=200 "VDD" "a_154
 device msubckt sky130_fd_pr__pfet_01v8 1758 662 1759 663 l=30 w=200 "VDD" "a_1548_564#" 60 0 "VIN" 200 0 "VOUT" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 1662 662 1663 663 l=30 w=200 "VDD" "a_1548_564#" 60 0 "VOUT" 200 0 "VIN" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 1566 662 1567 663 l=30 w=200 "VDD" "a_1548_564#" 60 0 "VIN" 200 0 "VOUT" 200 0
-cap "CTR" "VDD" 8.60333
-cap "VIN" "VDD" 5.35714
-cap "INVMIN_v1p1_0/VOUT" "VDD" 562.722
+cap "VSS" "VIN" -2.84217e-14
+cap "VDD" "VOUT" -5.68434e-14
+cap "VDD" "VIN" 5.35714
 cap "INVMIN_v1p1_0/VOUT" "CTR" 23.0257
-cap "VOUT" "VDD" -5.68434e-14
 cap "VDD" "VSS" 5.68434e-14
-cap "CTR" "VSS" 122.785
-cap "VIN" "VSS" -2.84217e-14
+cap "VSS" "CTR" 122.785
 cap "INVMIN_v1p1_0/VOUT" "VSS" 767.861
-cap "INVMIN_v1p1_0/VSS" "INVMIN_v1p1_0/VOUT" 51.9231
+cap "VDD" "CTR" 8.60333
+cap "INVMIN_v1p1_0/VOUT" "VDD" 562.722
+cap "INVMIN_v1p1_0/VOUT" "INVMIN_v1p1_0/VSS" 51.9231
 merge "INVMIN_v1p1_0/VSS" "VSS" -98.245 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 0 0 0 0 0 0 0 0 0 0 0 0
 merge "INVMIN_v1p1_0/VDD" "VDD" -100.225 0 0 0 0 0 -560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 0 0 0 0 0 0 0 0 0 0 0 0
 merge "INVMIN_v1p1_0/VIN" "CTR" -49.7229 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1156 -136 0 0 0 0 0 0 0 0 0 0 0 0

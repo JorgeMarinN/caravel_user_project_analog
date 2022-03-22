@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1645198197
+timestamp 1647927446
 << locali >>
 rect 18 594 1347 611
 rect 18 18 1155 35
@@ -30,17 +30,17 @@ rect 788 375 1217 401
 rect 1243 375 1246 401
 rect 304 372 1246 375
 use INV_v1p1  INV_v1p1_a_0
-timestamp 1641587603
+timestamp 1641609411
 transform 1 0 -683 0 1 89
-box 683 -89 1138 540
+box 683 -84 1138 540
 use INV_v1p1  INV_v1p1_a_1
-timestamp 1641587603
+timestamp 1641609411
 transform 1 0 -228 0 1 89
-box 683 -89 1138 540
+box 683 -84 1138 540
 use INV_v1p1  INV_v1p1_a_2
-timestamp 1641587603
+timestamp 1641609411
 transform 1 0 227 0 1 89
-box 683 -89 1138 540
+box 683 -84 1138 540
 << labels >>
 flabel locali 31 601 31 601 0 FreeSans 800 0 0 0 VDD
 port 0 nsew
